@@ -25,6 +25,7 @@ I have an analytical mind. I am a very fast learner and always try to learn some
 
 ---
 #### Code Example:
+
 ```
 function multiply(a, b){
   return a * b
@@ -34,6 +35,7 @@ let result = multiply(2, 2);
 
 console.log('result');
 ```
+
 ---
 #### Work Experience:
 > I just began...
