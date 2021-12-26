@@ -33,3 +33,18 @@ let result = multiply(2, 2);
 console.log('result');
 ```
 ---
+#### Work Experience:
+> I just began...
+---
+#### Education and courses:
+**University:** National University of Food Technologies, Automation and Computers Sustems
+
+**Courses:**
+1. [Code-basics: HTML](https://ru.code-basics.com/languages/html).
+2. [Code-basics: CSS](https://www.linkedin.com/in/maksym-shevkun-a1456a226/).
+3. [Современный учебник JavaScript](https://learn.javascript.ru/).
+---
+#### Languages:
+* English - A2
+* Russian - Native
+* Ukrainian - Native
