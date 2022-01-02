@@ -46,7 +46,7 @@ console.log('result');
 
 **Courses:**
 1. [Code-basics: HTML](https://ru.code-basics.com/languages/html).
-2. [Code-basics: CSS](https://www.linkedin.com/in/maksym-shevkun-a1456a226/).
+2. [Code-basics: CSS](https://ru.code-basics.com/languages/css).
 3. [Современный учебник JavaScript](https://learn.javascript.ru/).
 
 ---

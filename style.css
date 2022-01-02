@@ -146,8 +146,6 @@ h1 {
     height: 100%;
 }
 
-
-
 main {
     width: 100%;
     display: flex;
@@ -212,7 +210,7 @@ h2 {
 }
 
 #about_myself>p {
-    line-height: 1.2em;
+    line-height: 1.5em;
 }
 
 .skills_list {
