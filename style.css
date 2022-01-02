@@ -1,0 +1,462 @@
+:root {
+    --blue: #157698;
+    --grey: #4C4E50;
+    --medium_grey: #C4C4C4;
+    --white: white;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--medium_grey);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: var(--white);
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: var(--blue);
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navigation-list {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation-list>li {
+    list-style-type: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.navigation-list a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.navigation-list a:hover {
+    background: var(--grey);
+    color: var(--blue);
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+.avatar {
+    width: 40%;
+    height: 400px;
+    background-color: var(--grey);
+    position: relative;
+}
+
+.avatar_img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    bottom: 0;
+    background-color: var(--blue);
+}
+
+.avatar_img img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    height: 250px;
+}
+
+.name {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+h1, .surname, .front {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 117px;
+    letter-spacing: 0.005em;
+    color: var(--blue);
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.surname {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 117px;
+    letter-spacing: 0.005em;
+    color: #A9A9A9;
+    text-transform: uppercase;
+}
+
+.front {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 47px;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.under_line_header {
+    width: 100%;
+    height: 50px;
+    background: var(--blue);
+}
+
+.under_photo {
+    background: var(--white);
+    border-right: 300px solid var(--blue);
+    width: 40%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.aside {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#contact {
+    margin-top: 50px;
+}
+
+.aside>section {
+    width: 80%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-left: 5px solid var(--blue);
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.contact_list>li {
+    list-style-type: none;
+    margin: 15px 15px 15px 1.1em;
+    line-height: 1.4em;
+}
+
+.link {
+    color: var(--grey);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.link:hover {
+    background: var(--grey);
+    color: var(--blue);
+    border-radius: 5px;
+}
+
+.code {
+    background: var(--medium_grey);
+    padding: 10px 10px 10px 25px;
+    width: 70%;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+}
+
+.experience>p {
+    margin-bottom: 5px;
+}
+
+.main_section {
+    width: 60%;
+    background: #E1E3E5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main_section>section {
+    margin: 20px;
+}
+
+#about_myself {
+    margin-top: 50px;
+}
+
+#about_myself>p {
+    line-height: 1.5em;
+}
+
+.skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills_list>li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    margin: 10px 10px 35px 80px;
+}
+
+.html::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("./assets/img/html_logo.png");
+    background-size: 50px 50px;
+}
+
+.html::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 30px solid var(--medium_grey);
+}
+
+.css::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("./assets/img/css_logo.jpg");
+    background-size: 50px 50px;
+}
+
+.css::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 50px solid var(--medium_grey);
+}
+
+.sql::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("./assets/img/sql_logo.png");
+    background-size: 50px 50px;
+}
+
+.sql::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 60px solid var(--medium_grey);
+}
+
+.git::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("./assets/img/git_logo.png");
+    background-size: 50px 50px;
+}
+
+.git::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 35px solid var(--medium_grey);
+}
+
+.javascript::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("./assets/img/js_logo.png");
+    background-size: 50px 50px;
+}
+
+.javascript::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 80px solid var(--medium_grey);
+}
+
+.vs::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("./assets/img/vs_logo.jpg");
+    background-size: 50px 50px;
+}
+
+.vs::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 30px solid var(--medium_grey);
+}
+
+.linux::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("./assets/img/linux_logo.jpg");
+    background-size: 50px 50px;
+}
+
+.linux::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 60px solid var(--medium_grey);
+}
+
+.university {
+    margin: 5px;
+}
+
+.course_title {
+    margin: 10px 10px 5px 5px;
+}
+
+.courses {
+    margin: 15px 15px 10px 5px;
+}
+
+.courses>li {
+    list-style-type: none;
+    margin: 20px 20px 20px 1.1em;
+}
+
+.languages>li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.github>a {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: transform .2s;
+}
+
+.github:hover {
+    transform: scale(1.2);
+}
+
+.year {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.logo_rs {
+    width: 100px;
+    height: 100px;
+    transition: transform .2s;
+}
+
+.logo_rs:hover {
+    transform: scale(1.2);
+}
