@@ -12,12 +12,17 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: var(--medium_grey);
+}
+
 .page {
     display: flex;
     flex-direction: column;
     max-width: 1300px;
     margin: 0 auto;
     min-height: 100vh;
+    background: var(--white);
 }
 
 nav {
@@ -49,10 +54,16 @@ nav {
     font-weight: 900;
     font-style: italic;
     letter-spacing: 2px;
+    padding: 5px;
+}
+
+.navigation-list a:hover {
+    background: var(--grey);
+    color: var(--blue);
+    border-radius: 5px;
 }
 
 header {
-    margin-top: 39px;
     display: flex;
     width: 100%;
 }
@@ -126,7 +137,305 @@ h1 {
     width: 100%;
     height: 50px;
     background: var(--blue);
-    border-left: 220px solid var(--white);
 }
+
+.under_photo {
+    background: var(--white);
+    border-right: 300px solid var(--blue);
+    width: 40%;
+    height: 100%;
+}
+
+
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.aside {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#contact {
+    margin-top: 50px;
+}
+
+.aside>section {
+    width: 80%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-left: 5px solid var(--blue);
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.contact_list>li {
+    margin: 5px;
+    line-height: 1.4em;
+    margin-left: 1.1em;
+}
+
+.code {
+    background: var(--medium_grey);
+    padding: 10px 10px 10px 25px;
+    width: 70%;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+}
+
+.experience>p {
+    margin-bottom: 5px;
+}
+
+.main {
+    width: 60%;
+    background: #E1E3E5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main>section {
+    margin: 20px;
+}
+
+#about_myself {
+    margin-top: 50px;
+}
+
+#about_myself>p {
+    line-height: 1.2em;
+}
+
+.skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills_list>li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    margin: 10px 10px 35px 80px;
+}
+
+.html::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("html_logo.png");
+    background-size: 50px 50px;
+}
+
+.html::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 30px solid var(--medium_grey);
+}
+
+.css::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("css_logo.jpg");
+    background-size: 50px 50px;
+}
+
+.css::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 40px solid var(--medium_grey);
+}
+
+.sql::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("sql_logo.png");
+    background-size: 50px 50px;
+}
+
+.sql::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 40px solid var(--medium_grey);
+}
+
+.git::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("git_logo.png");
+    background-size: 50px 50px;
+}
+
+.git::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 35px solid var(--medium_grey);
+}
+
+.javascript::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("js_logo.png");
+    background-size: 50px 50px;
+}
+
+.javascript::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 50px solid var(--medium_grey);
+}
+
+.vs::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("vs_logo.jpg");
+    background-size: 50px 50px;
+}
+
+.vs::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 20px solid var(--medium_grey);
+}
+
+.linux::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 25%;
+    height: 250%;
+    background-image: url("linux_logo.jpg");
+    background-size: 50px 50px;
+}
+
+.linux::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    top: 25px;
+    right: 0.5%;
+    background: var(--blue);
+    border-right: 40px solid var(--medium_grey);
+}
+
+.university {
+    margin: 5px;
+}
+
+.courses {
+    margin: 10px;
+}
+
+.courses>li {
+    margin: 20px;
+    margin-left: 1.1em;
+}
+
+.languages>li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.github>a {
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: transform .2s;
+}
+
+.github:hover {
+    transform: scale(1.2);
+}
+
+.year {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.logo_rs {
+    width: 100px;
+    height: 100px;
+    transition: transform .2s;
+}
+
+.logo_rs:hover {
+    transform: scale(1.2);
+}
+
 
 
