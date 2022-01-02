@@ -155,6 +155,7 @@ main {
     width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-end;
 }
 
@@ -176,9 +177,26 @@ h2 {
 }
 
 .contact_list>li {
-    margin: 5px;
+    list-style-type: none;
+    margin: 15px 15px 15px 1.1em;
     line-height: 1.4em;
-    margin-left: 1.1em;
+}
+
+.link {
+    color: var(--grey);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.link:hover {
+    background: var(--grey);
+    color: var(--blue);
+    border-radius: 5px;
 }
 
 .code {
@@ -268,7 +286,7 @@ h2 {
     top: 25px;
     right: 0.5%;
     background: var(--blue);
-    border-right: 40px solid var(--medium_grey);
+    border-right: 50px solid var(--medium_grey);
 }
 
 .sql::before {
@@ -290,7 +308,7 @@ h2 {
     top: 25px;
     right: 0.5%;
     background: var(--blue);
-    border-right: 40px solid var(--medium_grey);
+    border-right: 60px solid var(--medium_grey);
 }
 
 .git::before {
@@ -334,7 +352,7 @@ h2 {
     top: 25px;
     right: 0.5%;
     background: var(--blue);
-    border-right: 50px solid var(--medium_grey);
+    border-right: 80px solid var(--medium_grey);
 }
 
 .vs::before {
@@ -356,7 +374,7 @@ h2 {
     top: 25px;
     right: 0.5%;
     background: var(--blue);
-    border-right: 20px solid var(--medium_grey);
+    border-right: 30px solid var(--medium_grey);
 }
 
 .linux::before {
@@ -378,7 +396,7 @@ h2 {
     top: 25px;
     right: 0.5%;
     background: var(--blue);
-    border-right: 40px solid var(--medium_grey);
+    border-right: 60px solid var(--medium_grey);
 }
 
 .university {
@@ -386,12 +404,12 @@ h2 {
 }
 
 .courses {
-    margin: 10px;
+    margin: 15px 15px 10px 5px;
 }
 
 .courses>li {
-    margin: 20px;
-    margin-left: 1.1em;
+    list-style-type: none;
+    margin: 20px 20px 20px 1.1em;
 }
 
 .languages>li {
@@ -409,7 +427,7 @@ footer {
 }
 
 .github>a {
-    color: black;
+    color: var(--white);
     font-size: 40px;
     font-weight: 900;
     text-decoration: none;
@@ -434,6 +452,3 @@ footer {
 .logo_rs:hover {
     transform: scale(1.2);
 }
-
-
-
